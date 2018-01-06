@@ -28,7 +28,7 @@ public class Log implements Serializable{
 	private Integer cpu;
 	private Integer memory;
 	private Integer hd;
-	private Integer hdio;
+	private Integer hdIo;
 	private Date created;
 	public Long getId() {
 		return id;
@@ -72,11 +72,11 @@ public class Log implements Serializable{
 	public void setHd(Integer hd) {
 		this.hd = hd;
 	}
-	public Integer getHdio() {
-		return hdio;
+	public Integer gethdIo() {
+		return hdIo;
 	}
-	public void setHdio(Integer hdio) {
-		this.hdio = hdio;
+	public void sethdIo(Integer hdIo) {
+		this.hdIo = hdIo;
 	}
 	public Date getCreated() {
 		return created;
@@ -87,7 +87,7 @@ public class Log implements Serializable{
 	@Override
 	public String toString() {
 		return "Log [id=" + id + ", hostId=" + hostId + ", hostName=" + hostName + ", host=" + host + ", cpu=" + cpu
-				+ ", memory=" + memory + ", hd=" + hd + ", hdio=" + hdio + ", created=" + created + "]";
+				+ ", memory=" + memory + ", hd=" + hd + ", hdIo=" + hdIo + ", created=" + created + "]";
 	}
 	@Override
 	public int hashCode() {
